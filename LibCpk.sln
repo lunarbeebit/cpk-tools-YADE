@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCpk", "LibCpk\LibCpk.csproj", "{F1758A1D-2B22-4834-B596-924D4418D179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCRIComp", "LibCRIComp\LibCRIComp.csproj", "{8B7D9C15-F587-47EA-9684-7BEB8A1DE576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1758A1D-2B22-4834-B596-924D4418D179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1758A1D-2B22-4834-B596-924D4418D179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1758A1D-2B22-4834-B596-924D4418D179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1758A1D-2B22-4834-B596-924D4418D179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7D9C15-F587-47EA-9684-7BEB8A1DE576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7D9C15-F587-47EA-9684-7BEB8A1DE576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7D9C15-F587-47EA-9684-7BEB8A1DE576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7D9C15-F587-47EA-9684-7BEB8A1DE576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
