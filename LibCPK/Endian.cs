@@ -149,7 +149,7 @@ namespace LibCPK
 
         public void Write<T>(T value)
         {
-            dynamic input = value;
+            dynamic? input = value;
             byte[] someBytes = BitConverter.GetBytes(input);
             if (!isLittleEndian)
                 someBytes = someBytes.Reverse().ToArray();
@@ -161,23 +161,23 @@ namespace LibCPK
         {
             if (entry.ExtractSizeType == typeof(Byte))
             {
-                Write((Byte)entry.ExtractSize);
+                Write((Byte)(entry.ExtractSize ?? throw new InvalidOperationException()));
             }
             else if (entry.ExtractSizeType == typeof(UInt16))
             {
-                Write((UInt16)entry.ExtractSize);
+                Write((UInt16)(entry.ExtractSize ?? throw new InvalidOperationException()));
             }
             else if (entry.ExtractSizeType == typeof(UInt32))
             {
-                Write((UInt32)entry.ExtractSize);
+                Write((UInt32)(entry.ExtractSize ?? throw new InvalidOperationException()));
             }
             else if (entry.ExtractSizeType == typeof(UInt64))
             {
-                Write((UInt64)entry.ExtractSize);
+                Write((UInt64)(entry.ExtractSize ?? throw new InvalidOperationException()));
             }
             else if (entry.ExtractSizeType == typeof(Single))
             {
-                Write((Single)entry.ExtractSize);
+                Write((Single)(entry.ExtractSize ?? throw new InvalidOperationException()));
             }
             else
             {

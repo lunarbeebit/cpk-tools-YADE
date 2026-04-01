@@ -1,17 +1,12 @@
-// ÕâÊÇÖ÷ DLL ÎÄ¼þ¡£
-#include <windows.h>
-#include "stdafx.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ DLL ï¿½Ä¼ï¿½ï¿½ï¿½
 #include "LibCRIComp.h"
 
 
-namespace LibCRIComp
+namespace LibCRIComp		
 {
 	/*
 	CRIcompress method by KenTse
-
+	
 	*/
 	int CriCompression::CRIcompress(unsigned char *dest, int *destLen, unsigned char *src, int srcLen)
 	{
